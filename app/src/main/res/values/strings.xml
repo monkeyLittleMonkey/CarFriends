@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">CarPlay</string>
+    <string name="talkcar">聊车</string>
+    <string name="lookcar">头条</string>
+    <string name="buycar">购车</string>
+    <string name="aboutme">我的</string>
+
+    <string name="newcars">上市新车</string>
+    <string name="enewcars">新能源车</string>
+    <string name="oldcars">优质二手</string>
+
+    <string name="electriccars">电动车</string>
+    <string name="hybridcars">混动车</string>
+    <string name="carsnews">新闻资讯</string>
+
+    <string name="signed">每日签到</string>
+    <string name="signedhis">签到记录</string>
+    <string name="lotterydrow">每日抽奖</string>
+    <string name="mycollection">我的收藏</string>
+    <string name="lookhis">浏览历史</string>
+    <string name="about">关于</string>
+    <string name="loginOrUserName">登录/注册</string>
+
+    <string name="author">monkeyLittleMonkey</string>
+    <string name="email">523217955@qq.com</string>
+    <string name="CSDN">http://blog.csdn.net/chengxu_hou?viewmode=list</string>
+    <string name="declaration">本APP采用MVP设计模式开发，所有数据均来自汽车之家等网络平台，严禁任何商业用途，仅用于学习交流。</string>
+</resources>

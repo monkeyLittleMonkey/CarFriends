@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/build.gradle" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/about.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/html/lottery.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/MainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/MyApplication.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/aboutme/view/AboutMeFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/adapter/OldCarAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/adapter/OldCarChildViewHolder.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/adapter/OldCarParentViewHolder.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/bean/CarNews.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/bean/ECar.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/bean/HybridCar.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/bean/NewCar.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/bean/OldCar.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/model/BuyCarModel.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/model/IBuyCarModel.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/presenter/NewCarPresenter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/presenter/NewEnergyCarPresenter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/presenter/OldCarPresenter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/view/BuyCarFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/view/CarDetailActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/view/NewCarPagerNewFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/view/NewCarPagerOldFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/lookcar/bean/LookCar.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/lookcar/view/LookCarFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/talkcar/adapter/TalkCarAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/talkcar/view/TalkCarFragment.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

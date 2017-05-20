@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hbh.cl.carfriends.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/topTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/talk_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/talkcar"
+            android:drawableTop="@drawable/ic_talk_car"
+            style="@style/bottom_iconbtn"/>
+
+        <RadioButton
+            android:id="@+id/look_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/lookcar"
+            android:drawableTop="@drawable/ic_look_car"
+            style="@style/bottom_iconbtn"/>
+
+        <RadioButton
+            android:id="@+id/buy_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/buycar"
+            android:drawableTop="@drawable/ic_buy_car"
+            style="@style/bottom_iconbtn"/>
+
+        <RadioButton
+            android:id="@+id/aboutme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/aboutme"
+            android:drawableTop="@drawable/ic_aboutme"
+            style="@style/bottom_iconbtn"/>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/center_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topTitle"
+        android:layout_above="@id/radio_group"
+        android:background="@color/lightgray"
+        >
+    </FrameLayout>
+
+</RelativeLayout>
