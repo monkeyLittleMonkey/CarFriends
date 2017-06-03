@@ -80,7 +80,7 @@ public class NewCarPagerEFragment extends Fragment implements IECarView, SwipeRe
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-        mRecyclerView.addItemDecoration(new SpacesItemDecoration(4));
+        mRecyclerView.addItemDecoration(new SpacesItemDecoration(this.getActivity(), R.dimen.divider_height_1));
 
         mCarNewsAdapter = new CarNewsAdapter(x.app());
         mHybridCarAdapter = new HybridCarAdapter(x.app());

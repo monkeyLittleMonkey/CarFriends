@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -47,10 +47,10 @@ public class BottomInfoAdapter extends RecyclerView.Adapter<BottomInfoAdapter.My
                 .into(holder.tv_img);
         holder.tv_summary.setText(mLookCar.Data.get(0).CatList.get(position).Summary);
         if (mMyClickListener != null) {
-            holder.linear_layout.setOnClickListener(new View.OnClickListener() {
+            holder.relative_layout.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    mMyClickListener.onClick(holder.linear_layout, holder.getLayoutPosition());
+                    mMyClickListener.onClick(holder.relative_layout, holder.getLayoutPosition());
                 }
             });
         }
@@ -69,8 +69,8 @@ public class BottomInfoAdapter extends RecyclerView.Adapter<BottomInfoAdapter.My
         private ImageView tv_img;
         @ViewInject(R.id.tv_summary)
         private TextView tv_summary;
-        @ViewInject(R.id.linear_layout)
-        private LinearLayout linear_layout;
+        @ViewInject(R.id.relative_layout_TV)
+        private RelativeLayout relative_layout;
 
         public MyViewHolder(View itemView) {
             super(itemView);

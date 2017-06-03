@@ -115,7 +115,7 @@ public class LookCarFragment extends Fragment implements ILookCarView {
             }
         });
         mRecyclerView.setAdapter(adapter);
-        mRecyclerView.addItemDecoration(new SpacesItemDecoration(4));
+        mRecyclerView.addItemDecoration(new SpacesItemDecoration(this.getActivity(), R.dimen.divider_height_1));
 
 
         mPresenter = new LookCarPresenter(this);

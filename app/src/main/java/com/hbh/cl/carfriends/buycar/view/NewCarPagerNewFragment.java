@@ -64,7 +64,7 @@ public class NewCarPagerNewFragment extends Fragment implements INewCarView, Swi
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         mAdapter = new NewCarAdapter(x.app());
         mRecyclerView.setAdapter(mAdapter);
-        mRecyclerView.addItemDecoration(new SpacesItemDecoration(4));
+        mRecyclerView.addItemDecoration(new SpacesItemDecoration(this.getActivity(), R.dimen.divider_height_1));
         mPresenter = new NewCarPresenter(this);
         onRefresh();
     }

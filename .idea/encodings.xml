@@ -28,6 +28,7 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/lookcar/view/LookCarFragment.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/talkcar/adapter/TalkCarAdapter.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/talkcar/view/TalkCarFragment.java" charset="GBK" />
-    <file url="PROJECT" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/util/Constant.java" charset="GBK" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>

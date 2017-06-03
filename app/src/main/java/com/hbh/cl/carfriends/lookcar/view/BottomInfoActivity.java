@@ -74,7 +74,7 @@ public class BottomInfoActivity extends AppCompatActivity implements ILookCarVie
         });
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL));
         mRecyclerView.setAdapter(mAdapter);
-        mRecyclerView.addItemDecoration(new SpacesItemDecoration(10));
+        mRecyclerView.addItemDecoration(new SpacesItemDecoration(this,R.dimen.divider_height_5));
     }
 
     @Override
