@@ -156,9 +156,9 @@ public class OldCarAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 		notifyItemInserted(position);
 	}
 
-	public void addAll(List<OldCar.CarListBean> list, int position) {
+	public void addAll(List<OldCar.CarListBean> list) {
 		mDataSet.clear();
-		mDataSet.addAll(position, list);
-		notifyItemRangeInserted(position, list.size());
+		mDataSet.addAll(list);
+		notifyDataSetChanged();
 	}
 }

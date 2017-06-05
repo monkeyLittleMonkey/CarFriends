@@ -78,7 +78,7 @@ public class NewCarPagerOldFragment extends Fragment implements IOldCarView, Swi
     @Override
     public void LoadOldCarData(OldCar oldCar) {
 
-        mAdapter.addAll(oldCar.CarList, 0);
+        mAdapter.addAll(oldCar.CarList);
     }
 
     @Override

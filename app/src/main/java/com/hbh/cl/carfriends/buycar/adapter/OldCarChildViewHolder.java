@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -62,13 +63,16 @@ public class OldCarChildViewHolder extends BaseViewHolder {
 	}
 
 	public void bindView(final OldCar.CarListBean oldCar, int position) {
-		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(150, 120);
+		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 		childLayout.removeAllViews();
 		for (int i = 0; i < oldCar.ImageURL.split("\\|").length; i++) {
 			ImageView imageView = new ImageView(mContext);
 			imageView.setLayoutParams(params);
 			childLayout.addView(imageView);
-			Glide.with(mContext).load(oldCar.ImageURL.split("\\|")[i]).centerCrop().override(150,120).into(imageView);
+			Glide.with(mContext).load(oldCar.ImageURL.split("\\|")[i])
+//					.centerCrop()
+//					.override(300,200)
+					.into(imageView);
 		}
 		MainBrandName.setText("Æ·ÅÆ£º"+oldCar.MainBrandName + "(" + oldCar.Authenticated +")");
 		Exhaust.setText("ÅÅÁ¿£º" + oldCar.Exhaust);
