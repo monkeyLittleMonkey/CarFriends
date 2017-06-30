@@ -28,9 +28,9 @@ public class BottomInfoAdapter extends RecyclerView.Adapter<BottomInfoAdapter.My
     private OnMyClickListener mMyClickListener;
 
     public BottomInfoAdapter(Context context, LookCar lookCar) {
-        this.mContext = context;
+        this.mContext = context.getApplicationContext();
         this.mLookCar = lookCar;
-        this.mInflater = LayoutInflater.from(context);
+        this.mInflater = LayoutInflater.from(context.getApplicationContext());
     }
 
     @Override

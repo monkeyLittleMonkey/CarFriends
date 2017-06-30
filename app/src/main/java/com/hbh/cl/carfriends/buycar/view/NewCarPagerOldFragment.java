@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.hbh.cl.carfriends.MyApplication;
 import com.hbh.cl.carfriends.R;
 import com.hbh.cl.carfriends.buycar.adapter.OldCarAdapter;
 import com.hbh.cl.carfriends.buycar.adapter.OnScrollToListener;
@@ -99,5 +100,11 @@ public class NewCarPagerOldFragment extends Fragment implements IOldCarView, Swi
     @Override
     public void onRefresh() {
         mPresenter.loadOldCarData();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        MyApplication.getRefWatcher().watch(this);
     }
 }

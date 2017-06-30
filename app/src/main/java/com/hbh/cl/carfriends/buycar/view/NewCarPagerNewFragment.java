@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.hbh.cl.carfriends.MyApplication;
 import com.hbh.cl.carfriends.R;
 import com.hbh.cl.carfriends.buycar.adapter.NewCarAdapter;
 import com.hbh.cl.carfriends.buycar.bean.NewCar;
@@ -92,5 +93,11 @@ public class NewCarPagerNewFragment extends Fragment implements INewCarView, Swi
     @Override
     public void onRefresh() {
         mPresenter.loadNewCarData();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        MyApplication.getRefWatcher().watch(this);
     }
 }

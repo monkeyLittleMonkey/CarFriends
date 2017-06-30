@@ -9,19 +9,18 @@
 		android:id="@+id/detail_layout"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:orientation="horizontal">
-
+		android:layout_marginLeft="8dp"
+		android:layout_marginStart="8dp"
+		android:orientation="vertical">
 		<LinearLayout
-			android:layout_width="0dp"
-			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:layout_marginLeft="8dp"
-			android:layout_marginStart="8dp"
-			android:orientation="vertical">
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
 			<TextView
 				android:id="@+id/NewCarPrice"
-				android:layout_width="match_parent"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:gravity="center_vertical"
 				android:text="--"
 				android:padding="4dp"
@@ -29,17 +28,24 @@
 				android:textSize="14sp" />
 			<TextView
 				android:id="@+id/DisPlayPrice"
-				android:layout_width="match_parent"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:gravity="center_vertical"
 				android:text="--"
 				android:padding="4dp"
 				android:textColor="@color/red"
 				android:textSize="14sp" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
 			<TextView
 				android:id="@+id/MainBrandName"
-				android:layout_width="match_parent"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:gravity="center_vertical"
 				android:text="--"
 				android:padding="4dp"
@@ -47,18 +53,24 @@
 				android:textSize="14sp" />
 			<TextView
 				android:id="@+id/Exhaust"
-				android:layout_width="match_parent"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:gravity="center_vertical"
 				android:text="--"
 				android:padding="4dp"
 				android:textColor="@color/graydark"
 				android:textSize="14sp" />
-
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
 			<TextView
 				android:id="@+id/CityName"
-				android:layout_width="match_parent"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:gravity="center_vertical"
 				android:text="--"
 				android:padding="4dp"
@@ -66,18 +78,24 @@
 				android:textSize="14sp" />
 			<TextView
 				android:id="@+id/CarPublishTime"
-				android:layout_width="match_parent"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:gravity="center_vertical"
 				android:text="--"
 				android:padding="4dp"
 				android:textColor="@color/graydark"
 				android:textSize="14sp" />
-
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
 			<TextView
 				android:id="@+id/BuyCarDate_New"
-				android:layout_width="match_parent"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:gravity="center_vertical"
 				android:text="--"
 				android:padding="4dp"
@@ -85,17 +103,24 @@
 				android:textSize="14sp" />
 			<TextView
 				android:id="@+id/DrivingMileage"
-				android:layout_width="match_parent"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:gravity="center_vertical"
 				android:text="--"
 				android:padding="4dp"
 				android:textColor="@color/graydark"
 				android:textSize="14sp" />
+		</LinearLayout>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
 			<TextView
 				android:id="@+id/IsZhiBao"
-				android:layout_width="match_parent"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:gravity="center_vertical"
 				android:text="--"
 				android:textColor="@color/graydark"
@@ -103,52 +128,34 @@
 				android:textSize="14sp" />
 			<TextView
 				android:id="@+id/IsDealerAuthorized"
-				android:layout_width="match_parent"
+				android:layout_width="0dp"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:gravity="center_vertical"
 				android:text="--"
 				android:padding="4dp"
 				android:textColor="@color/graydark"
 				android:textSize="14sp" />
-
-			<LinearLayout
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:orientation="horizontal"
-				android:layout_marginLeft="8dp"
-				android:layout_marginRight="8dp"
-				android:layout_marginBottom="10dp"
-				android:gravity="center">
-				<TextView
-					android:id="@+id/more"
-					android:layout_width="match_parent"
-					android:layout_height="wrap_content"
-					android:gravity="center"
-					android:text="查看更多..."
-					android:textColor="@color/graydark"
-					android:textSize="14sp"
-					android:padding="4dp"
-					android:background="@drawable/textview_all_style"/>
-			</LinearLayout>
 		</LinearLayout>
 
 		<LinearLayout
-			android:layout_width="0dp"
-			android:layout_height="match_parent"
-			android:layout_weight="2">
-			<HorizontalScrollView
-				android:id="@+id/scroll_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:layout_marginBottom="10dp"
+			android:gravity="left">
+			<TextView
+				android:id="@+id/more"
 				android:layout_width="match_parent"
-				android:layout_height="match_parent"
-				android:layout_marginLeft="2dp"
-				android:scrollbars="none">
-				<LinearLayout
-					android:id="@+id/child_img_layout"
-					android:layout_width="match_parent"
-					android:layout_height="match_parent"
-					android:orientation="horizontal">
-				</LinearLayout>
-			</HorizontalScrollView>
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="更多详情"
+				android:textColor="@color/graydark"
+				android:textSize="14sp"
+				android:padding="4dp"
+				android:background="@drawable/textview_all_style"/>
 		</LinearLayout>
 	</LinearLayout>
 

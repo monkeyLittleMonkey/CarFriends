@@ -21,6 +21,7 @@ import org.xutils.view.annotation.ViewInject;
 import org.xutils.x;
 
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 
 /**
  * 优质二手车 下拉子布局
@@ -31,8 +32,6 @@ public class OldCarChildViewHolder extends BaseViewHolder {
 	private Context mContext;
 	@ViewInject(R.id.MainBrandName)
 	private TextView MainBrandName;
-	@ViewInject(R.id.child_img_layout)
-	private LinearLayout childLayout;
 	@ViewInject(R.id.childcontainer)
 	private RelativeLayout relativeLayout;
 	@ViewInject(R.id.Exhaust)
@@ -58,29 +57,27 @@ public class OldCarChildViewHolder extends BaseViewHolder {
 
 	public OldCarChildViewHolder(Context context, View itemView) {
 		super(itemView);
-		this.mContext = context;
+		this.mContext = context.getApplicationContext();
 		x.view().inject(this, itemView);
 	}
 
 	public void bindView(final OldCar.CarListBean oldCar, int position) {
-		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-		childLayout.removeAllViews();
-		for (int i = 0; i < oldCar.ImageURL.split("\\|").length; i++) {
-			ImageView imageView = new ImageView(mContext);
-			imageView.setLayoutParams(params);
-			childLayout.addView(imageView);
-			Glide.with(mContext).load(oldCar.ImageURL.split("\\|")[i])
-//					.centerCrop()
-//					.override(300,200)
-					.into(imageView);
-		}
+//		LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+//		childLayout.removeAllViews();
+//		for (int i = 0; i < oldCar.ImageURL.split("\\|").length; i++) {
+//			ImageView imageView = new ImageView(mContext);
+//			imageView.setLayoutParams(params);
+//			childLayout.addView(imageView);
+//			Glide.with(mContext).load(oldCar.ImageURL.split("\\|")[i])
+//					.into(imageView);
+//		}
 		MainBrandName.setText("品牌："+oldCar.MainBrandName + "(" + oldCar.Authenticated +")");
 		Exhaust.setText("排量：" + oldCar.Exhaust);
 		CityName.setText("所在地：" + oldCar.ProvinceName + "/" + oldCar.CityName);
-		CarPublishTime.setText("发布时间："+ oldCar.CarPublishTime);
+		CarPublishTime.setText("发布时间："+ oldCar.CarPublishTime.substring(0,11));
 		DrivingMileage.setText("行驶里程："+oldCar.DrivingMileage + "公里");
 		NewCarPrice.setText("新车价格：" + oldCar.NewCarPrice + "万");
-		DisPlayPrice.setText(oldCar.DisPlayPrice+"万  (省"+ new DecimalFormat("0.00").format(Double.parseDouble(oldCar.NewCarPrice) - Double.parseDouble(oldCar.DisPlayPrice))+"万)");
+		DisPlayPrice.setText("售价：" + oldCar.DisPlayPrice+"万  (省"+ new DecimalFormat("0.00").format(Double.parseDouble(oldCar.NewCarPrice) - Double.parseDouble(oldCar.DisPlayPrice))+"万)");
 		BuyCarDate_New.setText("购车时间：" + oldCar.BuyCarDate_New);
 		IsZhiBao.setText(oldCar.IsZhiBao);
 		IsDealerAuthorized.setText(oldCar.IsDealerAuthorized);

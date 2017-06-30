@@ -26,8 +26,8 @@ public class NewCarAdapter extends RecyclerView.Adapter<NewCarAdapter.MyViewHold
     private LayoutInflater mInflater;
 
     public NewCarAdapter(Context context) {
-        this.mContext = context;
-        this.mInflater = LayoutInflater.from(context);
+        this.mContext = context.getApplicationContext();
+        this.mInflater = LayoutInflater.from(context.getApplicationContext());
     }
 
     public void setData(NewCar newCar){

@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
+import com.hbh.cl.carfriends.MyApplication;
 import com.hbh.cl.carfriends.R;
 import com.hbh.cl.carfriends.talkcar.adapter.TalkCarAdapter;
 import com.hbh.cl.carfriends.talkcar.bean.TalkCar;
@@ -118,5 +119,11 @@ public class TalkCarFragment extends Fragment implements ITalkCarView, SwipeRefr
     public void onRefresh() {
         pageIndex = 0;
         mPresenter.loadData();
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        MyApplication.getRefWatcher().watch(this);
     }
 }

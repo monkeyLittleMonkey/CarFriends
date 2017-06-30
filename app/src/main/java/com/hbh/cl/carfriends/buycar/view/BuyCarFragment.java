@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.hbh.cl.carfriends.MyApplication;
 import com.hbh.cl.carfriends.R;
 
 import org.xutils.view.annotation.ContentView;
@@ -89,5 +90,11 @@ public class BuyCarFragment extends Fragment {
         public CharSequence getPageTitle(int position) {
             return mFragmentTitles.get(position);
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        MyApplication.getRefWatcher().watch(this);
     }
 }

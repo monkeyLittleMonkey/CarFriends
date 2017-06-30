@@ -28,8 +28,8 @@ public class CarNewsAdapter extends RecyclerView.Adapter<CarNewsAdapter.MyViewHo
     private OnItemClickListener mOnItemClickListener;
 
     public CarNewsAdapter(Context context) {
-        this.mContext = context;
-        this.mInflater = LayoutInflater.from(context);
+        this.mContext = context.getApplicationContext();
+        this.mInflater = LayoutInflater.from(context.getApplicationContext());
     }
 
     public void setDate(CarNews carNews){

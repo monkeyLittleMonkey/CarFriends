@@ -11,6 +11,7 @@ import android.view.WindowManager;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.hbh.cl.carfriends.MyApplication;
 import com.hbh.cl.carfriends.R;
 import com.hbh.cl.carfriends.util.CustomMediaController;
 
@@ -139,5 +140,6 @@ public class VideoInfoActivity extends AppCompatActivity {
         }
 
         super.onDestroy();
+        MyApplication.getRefWatcher().watch(this);
     }
 }

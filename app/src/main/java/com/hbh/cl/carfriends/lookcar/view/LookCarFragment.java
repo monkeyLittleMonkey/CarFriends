@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.hbh.cl.carfriends.MainActivity;
+import com.hbh.cl.carfriends.MyApplication;
 import com.hbh.cl.carfriends.R;
 import com.hbh.cl.carfriends.lookcar.adapter.BottomAdapter;
 import com.hbh.cl.carfriends.lookcar.adapter.HeaderAdapter;
@@ -207,5 +208,6 @@ public class LookCarFragment extends Fragment implements ILookCarView {
     public void onDestroy() {
         super.onDestroy();
         timer.cancel();
+        MyApplication.getRefWatcher().watch(this);
     }
 }

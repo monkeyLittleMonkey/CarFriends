@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 
+import com.hbh.cl.carfriends.MyApplication;
 import com.hbh.cl.carfriends.R;
 
 import org.xutils.view.annotation.ContentView;
@@ -54,6 +55,7 @@ public class LotteryDrawActivity extends AppCompatActivity {
         if (mXWalkView != null) {
             mXWalkView.onDestroy();
         }
+        MyApplication.getRefWatcher().watch(this);
     }
 
     @Override

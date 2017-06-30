@@ -26,9 +26,9 @@ public class BottomAdapter extends RecyclerView.Adapter<BottomAdapter.MyViewHold
     private OnClickListener mOnClickListener;
 
     public BottomAdapter(Context context, String[] titles) {
-        this.mContext = context;
+        this.mContext = context.getApplicationContext();
         this.itemTitles = titles;
-        this.mInflater = LayoutInflater.from(context);
+        this.mInflater = LayoutInflater.from(context.getApplicationContext());
     }
 
     @Override

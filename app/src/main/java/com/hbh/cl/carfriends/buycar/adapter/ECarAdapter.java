@@ -27,8 +27,8 @@ public class ECarAdapter extends RecyclerView.Adapter<ECarAdapter.MyViewHolder> 
     private LayoutInflater mInflater;
 
     public ECarAdapter(Context context) {
-        this.mContext = context;
-        this.mInflater = LayoutInflater.from(context);
+        this.mContext = context.getApplicationContext();
+        this.mInflater = LayoutInflater.from(context.getApplicationContext());
     }
 
     public void setData(ECar eCar){

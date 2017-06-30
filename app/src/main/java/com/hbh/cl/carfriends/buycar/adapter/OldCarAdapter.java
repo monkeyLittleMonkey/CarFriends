@@ -26,7 +26,7 @@ public class OldCarAdapter extends RecyclerView.Adapter<BaseViewHolder> {
 	}
 
 	public OldCarAdapter(Context context) {
-		mContext = context;
+		mContext = context.getApplicationContext();
 		mDataSet = new ArrayList<>();
 	}
 

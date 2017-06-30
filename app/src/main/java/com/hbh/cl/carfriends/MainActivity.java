@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         this.finish();
+        MyApplication.getRefWatcher().watch(this);
     }
 
     @Override

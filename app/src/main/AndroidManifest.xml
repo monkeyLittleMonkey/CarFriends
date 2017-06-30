@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".talkcar.view.ImageViewdetailActivity"
+        <activity android:name=".talkcar.view.ImageViewDetailActivity"
             android:theme="@style/Theme.Design.NoActionBar"/>
 
         <activity android:name=".lookcar.view.VideoInfoActivity"

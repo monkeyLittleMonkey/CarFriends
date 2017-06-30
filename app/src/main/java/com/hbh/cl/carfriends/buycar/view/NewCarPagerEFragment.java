@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.hbh.cl.carfriends.MyApplication;
 import com.hbh.cl.carfriends.R;
 import com.hbh.cl.carfriends.buycar.adapter.CarNewsAdapter;
 import com.hbh.cl.carfriends.buycar.adapter.ECarAdapter;
@@ -75,6 +76,19 @@ public class NewCarPagerEFragment extends Fragment implements IECarView, SwipeRe
                 R.color.primary_dark, R.color.primary_light,
                 R.color.accent);
         mSwipeRefreshLayout.setOnRefreshListener(this);
+
+        mRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(RecyclerView recyclerView, int newState) {
+                super.onScrollStateChanged(recyclerView, newState);
+            }
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                int topRowVerticalPosition = (recyclerView == null || recyclerView.getChildCount() == 0) ? 0 : recyclerView.getChildAt(0).getTop();
+                mSwipeRefreshLayout.setEnabled(topRowVerticalPosition >= 0);
+            }
+        });
 
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(getActivity());
@@ -197,5 +211,11 @@ public class NewCarPagerEFragment extends Fragment implements IECarView, SwipeRe
         }else{
             mNewEnergyCarPresenter.loadHCarData();
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        MyApplication.getRefWatcher().watch(this);
     }
 }

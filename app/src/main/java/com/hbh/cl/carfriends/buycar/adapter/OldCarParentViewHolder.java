@@ -11,6 +11,7 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.hbh.cl.carfriends.R;
@@ -52,7 +53,7 @@ public class OldCarParentViewHolder extends BaseViewHolder {
 
 	public OldCarParentViewHolder(Context context, View itemView) {
 		super(itemView);
-		this.mContext = context;
+		this.mContext = context.getApplicationContext();
 		x.view().inject(this, itemView);
 	}
 
@@ -104,15 +105,14 @@ public class OldCarParentViewHolder extends BaseViewHolder {
 
 			}
 		});
-//		image.setOnLongClickListener(new OnLongClickListener() {
-//
-//			@Override
-//			public boolean onLongClick(View view) {
-//				Toast.makeText(view.getContext(), "longclick",
-//						Toast.LENGTH_SHORT).show();
-//				return false;
-//			}
-//		});
+		oldCarImg.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(v.getContext(), "longclick",
+						Toast.LENGTH_SHORT).show();
+			}
+		});
 	}
 
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB)

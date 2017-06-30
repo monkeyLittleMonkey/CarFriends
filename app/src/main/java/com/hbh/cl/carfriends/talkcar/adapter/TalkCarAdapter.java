@@ -15,7 +15,7 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.hbh.cl.carfriends.R;
 import com.hbh.cl.carfriends.talkcar.bean.TalkCar;
-import com.hbh.cl.carfriends.talkcar.view.ImageViewdetailActivity;
+import com.hbh.cl.carfriends.talkcar.view.ImageViewDetailActivity;
 import com.hbh.cl.carfriends.util.CircleTransform;
 
 import org.xutils.view.annotation.ViewInject;
@@ -35,8 +35,8 @@ public class TalkCarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private boolean mShowFooter = true;
 
     public TalkCarAdapter(Context context) {
-        this.mContext = context;
-        mInflater = LayoutInflater.from(context);
+        this.mContext = context.getApplicationContext();
+        mInflater = LayoutInflater.from(context.getApplicationContext());
     }
 
     public void setData(TalkCar talkCar){
@@ -109,11 +109,12 @@ public class TalkCarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                     imageView.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View v) {
-                            Intent intent = new Intent(mContext, ImageViewdetailActivity.class);
+                            Intent intent = new Intent(mContext, ImageViewDetailActivity.class);
                             Bundle bundle = new Bundle();
                             bundle.putString("url", mTalkCar.Data.List.get(position).ImageList);
                             bundle.putInt("pos", finalI);
                             intent.putExtras(bundle);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             mContext.startActivity(intent);
                         }
                     });
@@ -156,7 +157,6 @@ public class TalkCarAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     @Override
     public int getItemViewType(int position) {
-        // ??????item?????footerView
         if(!mShowFooter) {
             return TYPE_ITEM;
         }

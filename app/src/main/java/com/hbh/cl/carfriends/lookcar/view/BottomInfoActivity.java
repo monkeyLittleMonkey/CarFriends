@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.hbh.cl.carfriends.MyApplication;
 import com.hbh.cl.carfriends.R;
 import com.hbh.cl.carfriends.lookcar.adapter.BottomInfoAdapter;
 import com.hbh.cl.carfriends.lookcar.bean.LookCar;
@@ -80,5 +81,11 @@ public class BottomInfoActivity extends AppCompatActivity implements ILookCarVie
     @Override
     public void showError(String message) {
         Toast.makeText(x.app(),"视频加载失败...",Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        MyApplication.getRefWatcher().watch(this);
     }
 }

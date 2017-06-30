@@ -22,7 +22,7 @@ public class ImageBrowseAdapter extends PagerAdapter {
     private String[] imagePath;
 
     public ImageBrowseAdapter(Context context, String[] urls) {
-        this.context = context;
+        this.context = context.getApplicationContext();
         this.imagePath = urls;
     }
 

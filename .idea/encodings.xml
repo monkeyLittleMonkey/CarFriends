@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/MainActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/MyApplication.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/aboutme/view/AboutMeFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/adapter/NewCarAdapter.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/adapter/OldCarAdapter.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/adapter/OldCarChildViewHolder.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/adapter/OldCarParentViewHolder.java" charset="GBK" />
@@ -26,8 +27,11 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/buycar/view/NewCarPagerOldFragment.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/lookcar/bean/LookCar.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/lookcar/view/LookCarFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/talkcar/adapter/ImageBrowseAdapter.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/talkcar/adapter/TalkCarAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/talkcar/view/ImageViewDetailActivity.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/talkcar/view/TalkCarFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/util/CircleTransform.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/util/Constant.java" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>

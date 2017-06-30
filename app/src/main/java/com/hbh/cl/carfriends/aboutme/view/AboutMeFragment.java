@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.hbh.cl.carfriends.MyApplication;
 import com.hbh.cl.carfriends.R;
 
 import org.xutils.view.annotation.ContentView;
@@ -54,5 +55,11 @@ public class AboutMeFragment extends Fragment {
                 this.startActivity(new Intent(x.app(), AboutActivity.class));
                 break;
         }
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        MyApplication.getRefWatcher().watch(this);
     }
 }

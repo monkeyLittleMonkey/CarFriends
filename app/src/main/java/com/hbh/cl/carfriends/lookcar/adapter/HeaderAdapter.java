@@ -1,6 +1,7 @@
 package com.hbh.cl.carfriends.lookcar.adapter;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
@@ -18,14 +19,14 @@ import com.hbh.cl.carfriends.lookcar.view.VideoInfoActivity;
 
 public class HeaderAdapter extends PagerAdapter {
 
-    private Activity context;
+    private Context context;
     private LookCar mLookCar;
     private int height;
     private int width;
 
 
     public HeaderAdapter(Activity context, LookCar lookCar, int height, int width) {
-        this.context = context;
+        this.context = context.getApplicationContext();
         if (lookCar.Data.get(0).CatList == null || lookCar.Data.get(0).CatList.size() == 0) {
             this.mLookCar = new LookCar();
         } else {

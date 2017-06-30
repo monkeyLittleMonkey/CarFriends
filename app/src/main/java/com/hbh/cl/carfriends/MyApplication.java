@@ -4,6 +4,7 @@ import android.app.Application;
 
 
 import com.squareup.leakcanary.LeakCanary;
+import com.squareup.leakcanary.RefWatcher;
 
 import org.xutils.x;
 
@@ -12,6 +13,9 @@ import org.xutils.x;
  */
 
 public class MyApplication extends Application {
+
+    private static RefWatcher refWatcher;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -19,6 +23,10 @@ public class MyApplication extends Application {
         x.Ext.init(this);//初始化
         x.Ext.setDebug(true);//设置输出日志
 
-        LeakCanary.install(this);
+        refWatcher = LeakCanary.install(this);
+    }
+    //获取监控对象
+    public static RefWatcher getRefWatcher(){
+        return refWatcher;
     }
 }

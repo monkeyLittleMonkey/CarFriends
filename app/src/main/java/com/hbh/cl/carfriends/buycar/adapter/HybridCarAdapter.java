@@ -27,8 +27,8 @@ public class HybridCarAdapter extends RecyclerView.Adapter<HybridCarAdapter.MyVi
     private LayoutInflater mInflater;
 
     public HybridCarAdapter(Context context) {
-        this.mContext = context;
-        this.mInflater = LayoutInflater.from(context);
+        this.mContext = context.getApplicationContext();
+        this.mInflater = LayoutInflater.from(context.getApplicationContext());
     }
 
     public void setDate(HybridCar hybridCar){
