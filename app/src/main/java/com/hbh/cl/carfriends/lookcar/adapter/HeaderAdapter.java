@@ -54,6 +54,7 @@ public class HeaderAdapter extends PagerAdapter {
                 bundle.putString("title", mLookCar.Data.get(0).CatList.get(position).Title);
                 bundle.putString("summary", mLookCar.Data.get(0).CatList.get(position).Summary);
                 intent.putExtras(bundle);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
         });

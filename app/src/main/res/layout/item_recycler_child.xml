@@ -138,25 +138,17 @@
 				android:textSize="14sp" />
 		</LinearLayout>
 
-		<LinearLayout
-			android:layout_width="match_parent"
+		<TextView
+			android:id="@+id/more"
+			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:orientation="horizontal"
-			android:layout_marginLeft="8dp"
-			android:layout_marginRight="8dp"
-			android:layout_marginBottom="10dp"
-			android:gravity="left">
-			<TextView
-				android:id="@+id/more"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:gravity="center"
-				android:text="更多详情"
-				android:textColor="@color/graydark"
-				android:textSize="14sp"
-				android:padding="4dp"
-				android:background="@drawable/textview_all_style"/>
-		</LinearLayout>
+			android:layout_gravity="right"
+			android:gravity="center"
+			android:layout_marginRight="@dimen/expand_size"
+			android:text="更多详情>>"
+			android:textColor="@color/blue"
+			android:textSize="14sp"
+			android:padding="4dp"/>
 	</LinearLayout>
 
 	<View
