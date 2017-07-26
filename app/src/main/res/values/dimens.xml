@@ -7,4 +7,8 @@
     <dimen name="expand_size">10dp</dimen>
     <dimen name="divider_height_1">1dp</dimen>
     <dimen name="divider_height_5">5dp</dimen>
+    <dimen name="toolbar_height">75dp</dimen>
+    <dimen name="toolbar_padding_top">25dp</dimen>
+    <dimen name="radio_group_height">48dp</dimen>
+    <dimen name="toolbar_padding_top_total">75dp</dimen>
 </resources>

@@ -60,6 +60,7 @@ public class CarDetailActivity extends AppCompatActivity {
         super.onDestroy();
         if (mXWalkView != null) {
             mXWalkView.onDestroy();
+            mXWalkView = null;
         }
         MyApplication.getRefWatcher().watch(this);
     }

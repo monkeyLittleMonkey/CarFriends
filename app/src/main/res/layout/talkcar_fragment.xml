@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/swipe_refresh_widget"
+    android:background="@color/white"
     >
 
     <android.support.v7.widget.RecyclerView
@@ -13,7 +14,7 @@
         android:layout_height="wrap_content"
         android:scrollbars="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:paddingTop="5dp"
+        android:paddingTop="@dimen/toolbar_padding_top"
         android:background="@color/white">
 
     </android.support.v7.widget.RecyclerView>

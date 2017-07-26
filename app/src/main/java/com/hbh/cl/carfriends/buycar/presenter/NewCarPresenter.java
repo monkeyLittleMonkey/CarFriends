@@ -1,11 +1,9 @@
 package com.hbh.cl.carfriends.buycar.presenter;
 
-import com.hbh.cl.carfriends.buycar.bean.CarNews;
 import com.hbh.cl.carfriends.buycar.bean.NewCar;
 import com.hbh.cl.carfriends.buycar.model.BuyCarModel;
-import com.hbh.cl.carfriends.buycar.model.ICarNewsCallBackListener;
-import com.hbh.cl.carfriends.buycar.model.INewCarCallBackListener;
 import com.hbh.cl.carfriends.buycar.model.IBuyCarModel;
+import com.hbh.cl.carfriends.buycar.model.INewCarCallBackListener;
 import com.hbh.cl.carfriends.buycar.view.INewCarView;
 
 /**

@@ -33,6 +33,14 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/talkcar/view/TalkCarFragment.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/util/CircleTransform.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hbh/cl/carfriends/util/Constant.java" charset="GBK" />
-    <file url="PROJECT" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/city_location_dian.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_fenxiang.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_home_page_nor.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_home_page_press.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/top_search.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_search.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_shaixuan_nor.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_shaixuan_press.png" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>
